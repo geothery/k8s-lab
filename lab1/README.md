@@ -19,3 +19,6 @@ Deploy the service :
 To do also :  
 * Check the log of the pod
 * Use ```kubectl exec``` with the good parameters to start a busybox pod and curl the service.
+* Check the internal DNS
+* Port forward to the pod
+* Perform a rolling update
