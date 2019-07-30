@@ -1,6 +1,13 @@
 ## LAB 1
 
-Log in the kubernetes cluster :  
+Check that you have kubectl command on your server  
+
+With kubectl :   
+- display the cluster status 
+- get the nodes details (number, version)
+- list the namespace
+- list the ressources (po,svc,...) of the different namespace
+
 Create the deployment with four replicas :  
 ```kubectl apply -f deployment.yaml```
 
