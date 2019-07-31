@@ -1,0 +1,15 @@
+ apiVersion: v1
+ kind: Pod
+ metadata:
+   name: centos
+ spec:
+   containers:
+   - image: centos
+     name: centos
+     volumeMounts:
+     - name: centos-data
+       mountPath: /mnt
+   volumes:
+   - name: centos-data
+     persistentVolumeClaim:
+       claimName: the_same_name_than_in_your_pvc
